@@ -1,0 +1,1281 @@
+		* {
+			padding: 0;
+			font-family: "Open Sans", sans-serif;
+			margin: 0;
+		}
+		@media screen and (max-width: 260px) {
+			body .menu .home h1 {
+				color: red;
+			}
+		}
+		/*@media screen and (max-width: 320px) {
+			body .menu img {
+				margin: -60px 10px 0 0;
+			}
+			body .menu nav ul li a {
+				z-index: 1;
+				font-size: 10px;
+				padding: 0 5px;
+				color: seagreen;
+			}
+			body .menu nav ul li:hover a {
+				color: white;
+			}
+			body .menu nav {
+				margin: -52px 0 0 0;
+		    }
+			body .menu nav ul li ul {
+		      	margin: 0;
+		    }
+		    body .menu nav ul li ul li a {
+		    	z-index: 1;
+		    }
+		    body .background .caption h1 {
+		    	margin: 50px;
+		    	font-size: 20px;
+		    	z-index: 0;
+		    }
+		    body .background .caption p {
+		    	margin: 250px 300px 300px 50px;
+		    	font-size: 15px;
+		    	width: 200px;
+		    }
+		    body .background .caption button {
+				top: 520px;
+				left: 120px;
+		    }
+		}*/
+		@media screen and (max-width: 900px) {
+			.menu .home h1 {
+				font-size: 150%;
+			}
+			.menu nav ul li a {
+				font-size: 15px;
+				padding: 0 20px;
+			}
+			body .background .caption h1 {
+		    	font-size: 35px;
+		    }
+		    body .itemForm {
+		    	width: 700px;
+				margin: 755px 0 0 80px;
+		    }
+		    body .itemForm .identitas input.inputText {
+				width: 110px;
+				font-size: 10px;
+			}
+		    body .itemForm .identitas select {
+				width: 120px;
+				font-size: 10px;
+			}
+		    .galeri .foto {
+				width: 17%;
+				margin-left: 15px;
+			}
+			.galeri .foto .judul {
+				font-size: 15px;
+			}
+			.galeri .foto p {
+				font-size: 10px;
+			}
+			.galeri .foto:hover .ket {
+				font-size: 10px;
+			}
+			body .wrap .layanan{
+				width: 240px;
+				margin: 0 0 0 20px;
+			}
+			body .wrap .nomor {
+				top: 1600px;
+				height: 30px;
+				width: 30px;
+			}
+			body .wrap .nomor .a {
+				margin: 0;
+				font-size: 20px;
+			}
+			body .wrap .layanan p {
+				font-size: 13px;
+			}
+			body .wrap .layanan img{
+				width: 240px;
+			}
+			body .wrap .layanan button {
+				width: 100px;
+			}
+			body .shop .olshop {
+				margin: 50px 0 50px 75px;
+				width: 200px;
+				border: 1px solid rgba(150, 150, 150, 0.5);
+				border-radius: 15px;
+				float: left;
+				transition: 0.7s;
+			}
+			body .shop .olshop img {
+				width: 70px;
+				margin: 20px 0 0 70px;
+			}
+			body .shop .olshop p {
+				font-size: 13px;
+			}
+			body .duakolom .kiri, .kanan {
+				width: 150px;
+			}
+			body .duakolom .kiri p {
+				font-size: 13px;
+			}
+			body .duakolom .kiri a {
+				font-size: 13px;
+			}
+			body .layer .membership {
+				width: 200px;
+				margin: 30px 0 25px 50px;
+			}
+			body .layer .membership h2 {
+				font-size: 15px;
+			}
+			body .layer .membership .isi a {
+				font-size: 10px;
+			}
+			body .layer .membership .button a {
+				font-size: 10px;
+			}
+			body .tigakolom .Ftengah {
+				font-size: 13px;
+			}
+			body .tigakolom .Fkanan {
+				width: 700px;
+				text-align: center;
+			}
+			body .tigakolom .Fkanan h3 {
+				text-align: center;
+			}
+		}
+		@media only screen and (min-width: 1200px) {
+			body {
+				width: 1260px;
+			}
+		}
+		
+
+
+		/* TAMPILAN MENU */
+		.menu {
+			background: linear-gradient(#175c20, seagreen);
+			height: 100px;
+		}
+		.menu .home {
+			text-decoration: none;
+			background: blue;
+		}
+		.menu .home h1 {
+			line-height: 90px;
+			color: white;
+			margin: 0 0 0 50px;
+			text-align: left;
+			width: 350px;
+		}
+		.menu .home h1 i {
+			font-family: cursive;
+			margin-left: -30px;
+		}
+		.menu img {
+			width: 150px;
+			float: left;
+			margin: -60px 10px 0 40px;
+		}
+		nav {
+	      	height: 40px;
+	      	line-height: 40px;
+			top: -1px;
+			z-index: 1;
+			float: right;
+			margin: -60px 0 0 0;
+	    }
+	    nav ul li .aktif {
+	        color: white;
+	    }
+	    nav ul li a .active {
+	        position: absolute;
+	        display: block;
+	    }
+	    nav ul li a .active:nth-child(1)  {
+	    	background: linear-gradient(90deg, transparent, rgba(255,30,50,1), rgba(255,150,0,1), rgba(0,255,255,1), rgba(255,0,255,1), transparent);
+	    	top: 0;
+	    	right: 0;
+	    	left: 0;
+	    	bottom: 0;
+	        width: 100%;
+	        height: 2px;
+	        filter: blur(0.5px);
+	    }
+	    nav ul li {
+	      	float: left;
+	      	background: none;
+	      	list-style: none;
+	      	cursor: pointer;
+	      	height: 70px;
+	    }
+	    nav ul li a {
+	      	margin-right: 15px;
+	      	text-decoration: none;
+	      	padding: 0 30px;
+	      	color: black;
+	      	position: relative;
+	        display: block;
+	        text-decoration: none;
+	        overflow: hidden;
+	        transition: 0.1s;
+	    }
+	    nav ul li a .RGB {
+	        position: absolute;
+	        display: block;
+	    }
+	    nav ul li a .RGB:nth-child(1) {
+	        top: 0;
+	        left: -100%;
+	        width: -100%;
+	        height: 2px;
+	        filter: blur(1px);
+	        background: linear-gradient(90deg, transparent, rgba(255,30,50,1), rgba(255,200,0,1), rgba(0,255,255,1), rgba(255,0,255,1), transparent);
+	    }
+	    nav ul li a:hover .RGB:nth-child(1) {
+	        left: 100%;
+	        width: 100%;
+	        transition: 0.5s;
+	    }
+	    nav ul li ul {
+	      	display: none;
+	      	border-top: 3px solid red;
+	      	background: seagreen;
+	      	z-index: 1;
+	    }
+	    nav ul li:hover > ul {
+	      	display: block;
+	    }
+	    nav ul li ul {
+	      	position: absolute;
+	      	margin: 30px 0 0 0;
+	    }
+	    nav ul li ul:nth-last-child(1) {
+	    	border-bottom-right-radius: 10px;
+	    	border-bottom-left-radius: 10px;
+	    }
+	    nav ul li ul li {
+	      	float: none;
+	      	position: relative;
+			z-index: 1;
+	      	height: 45px;
+	    }
+	    nav ul li ul li ul:nth-child(2) {
+	    	border-top-right-radius: 10px;
+	    }
+	    nav ul li:hover a {
+	      	color: white;
+	    }
+	    nav ul ul ul {
+	    	left: 100%;
+	    	top: -33px;
+	      	width: 190px;
+	      	display: none;
+	    }
+
+
+
+		/* BACKGROUND PEMBUKAAN */
+	    .background {
+	    	background: black;
+	    	height: 840px;
+	    }
+	    .background section {
+	    	top: 0;
+	    	left: 0;
+	    	right: 0;
+	    	bottom: 0;
+	    	width: 100%;
+	    	height: 100%;
+	    	position: relative;
+	    	opacity: 0.2;
+	    }
+	    section:before {
+	    	content: '';
+	    	position: absolute;
+	    	top: 0;
+	    	right: 0;
+	    	left: 0;
+	    	bottom: 0;
+	    	background-image: url("background2.jpg");
+	    	background-size: cover;
+	    	background-position: top center;
+	    }
+	    .background .caption h1 {
+	    	color: white;
+	    	position: absolute;
+	    	margin: 200px;
+	    	padding-top: 20px;
+	    	font-size: 50px;
+	    	z-index: 1;
+			font-family: "Brush Script Std", cursive;
+			font-weight: lighter;
+	    }
+	    .caption h1:before {
+	    	content: '';
+			position: absolute;
+			background: seagreen;
+	    	display: block;
+			width: 100px;
+			height: 5px;
+			left: 0;
+			top: 0;
+			border-radius: 5px;
+	    }
+	    .background .caption p {
+	    	color: white;
+	    	position: absolute;
+	    	margin: 300px 300px 300px 200px;
+	    	line-height: 20px;
+	    	font-size: 20px;
+	    	z-index: 1;
+	    	letter-spacing: 7px;
+	    }
+/*
+	    .background .caption button[type=button] {
+			padding: 10px;
+			height: 45px;
+			border: 0;
+			background: seagreen;
+			color: white;
+			position: absolute;
+			z-index: 1;
+			margin: 350px 0 0 200px;
+			font-size: 20px;
+			cursor: pointer;
+		}
+
+		.background .caption button:hover {
+			transition: background 1s ease-in-out;
+		}
+
+		.background .caption button[type=button]:hover {
+			background: black;
+			color: seagreen;
+			border: 3px solid seagreen;
+			padding: 7px;
+		}
+*/
+		.caption button {
+			position: absolute;
+			top: 500px;
+			left: 270px;
+			transform: translate(-50%, -50%);
+			background: none;
+			color: #ccc;
+			width: 140px;
+			height: 50px;
+			border: 3px solid seagreen;
+			font-size: 15px;
+			border-radius: 4px;
+			transition: .6s;
+			overflow: hidden;
+			z-index: 1;
+		}
+		.caption button:focus {
+			outline: none;
+		}
+		.caption button:before {
+			content: '';
+			display: block;
+			position: absolute;
+			background: rgba(255, 255, 255, .5);
+			width: 60px;
+			height: 100%;
+			left: 0;
+			top: 0;
+			opacity: .5s;
+			filter: blur(30px);
+			transform: translateX(-130px) skewX(-15deg);
+		}
+		.caption button:after {
+			content: '';
+			display: block;
+			position: absolute;
+			background: rgba(255, 255, 255, .2);
+			width: 30px;
+			height: 100%;
+			left: 30px;
+			top: 0;
+			opacity: 0;
+			filter: blur(30px);
+			transform: translate(-100px) scaleX(-15deg);
+		}
+		.caption button:hover {
+			background: seagreen;
+			cursor: pointer;
+			box-shadow: 0 0 10px seagreen, 0 0 40px seagreen, 0 0 80px seagreen;
+		}
+		.caption button:hover:before {
+			transform: translateX(300px) skewX(-15deg);
+			opacity: .6;
+			transition: .7s;
+		}
+		.caption button:hover:after {
+			transform: translateX(300px) skewX(-15deg);
+			opacity: 1;
+			transition: .7s;
+		}
+	    .itemForm {
+			background: white;
+			padding: 15px;
+			width: 900px;
+			position: absolute;
+			height: 50px;
+			border-bottom: 5px solid seagreen;
+			margin: 755px 0 0 150px;
+			z-index: 1;
+		}
+		.itemForm .identitas input, select {
+			line-height: 23px;
+			margin: 2px 15px 2px 2px;
+			height: 40px;
+			border: 0;
+			border-right: 1px solid gray;
+		}
+		.itemForm .identitas select {
+			cursor: pointer;
+			border: 0;
+		}
+		.itemForm .identitas input.inputText {
+			padding: 0 20px 0 10px;
+		}
+		.itemForm .identitas select {
+			width: 200px;
+			font-size: 14px;
+			padding: 12px;
+			color: gray;
+			height: 45px;
+		}
+		.itemForm .identitas button[type=button] {
+			padding: 10px;
+			height: 45px;
+			border: 0;
+			background: seagreen;
+			color: white;
+			width: 190px;
+			margin: 0 0 0 20px;
+			cursor: pointer;
+		}
+		.itemForm .identitas button:hover {
+			transition: background 1s ease-in-out;
+		}
+		.itemForm .identitas button[type=button]:hover {
+			background: none;
+			color: seagreen;
+			border: 3px solid seagreen;
+			padding: 7px;
+		}
+
+
+		/* GALERI*/
+		.galeri p, h3 {
+			padding: 10px;
+			font-size: 20px;
+			text-align: center;
+		}
+		.galeri p {
+			color: seagreen;
+		}
+		.foto {
+			width: 232px;
+			float: left;
+			position: relative;
+			margin: 10px;
+		}
+		.foto img {
+			width: 100%;
+			height: auto;
+			border-radius: 5px;
+			filter:brightness(50%);
+		}
+		.foto img:hover {
+			filter:brightness(40%);
+			transition: filter 0.5s;
+		}
+		.foto .judul {
+			font-size: 20px;
+			color: white;
+			margin: -80px 0 0 20px;
+			position: absolute;
+		}
+		.foto .ket {
+			position: absolute;
+			display: none;
+		}
+		.foto:hover .ket {
+			display: block;
+			position: absolute;
+			font-size: 14px;
+			top: 20%;
+			left: 50%;
+			color: white;
+			background-color: rgba(0, 150, 50, 0.2);
+			text-align: center;
+			padding: 7px;
+			border-radius: 5px;
+		}
+		.foto p {
+			position: absolute;
+			margin: -60px 0 0 10px;
+			font-size: 15px;
+			color: white;
+		}
+		.foto button {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background: none;
+			bottom: 15%;
+			left: 75%;
+			border: 1px solid white;
+			font-size: 20px;
+			cursor: pointer;
+			color: white;
+			border-radius: 5px;
+		}
+		.foto button:hover {
+			background: rgba(255, 255, 255, 0.3);
+			transition: background 1s;
+		}
+		.slide {
+			margin: 25% 0 0 46%;
+			cursor: pointer;
+		}
+		.slide a {
+			background: lightgray;
+			padding: 0 11px;
+			text-decoration: none;
+			color: black;
+			margin-right: 15px;
+			border-radius: 50%;
+		}
+		.slide a:hover {
+			background-color: seagreen;
+		}
+		.slide a.onpage {
+			background-color: seagreen;
+			border-radius: 50%;
+			color: white;
+		}
+
+
+
+		/* LAYANAN */
+		.wrap {
+			overflow: hidden;
+			text-align: justify;
+			margin-top: 50px;
+			background-color: whitesmoke;
+			padding: 50px;
+		}
+		.wrap .nomor {
+			position: absolute;
+			height: 50px;
+			background-color: seagreen;
+			width: 50px;
+			top: 1685px;
+			margin: 0 0 0 20px;
+			border-radius: 50%;
+			font-size: 25px;
+			color: white;
+			text-align: center;
+			padding: 6px;
+		}
+		.wrap .nomor .a {
+			margin: 8px 0 0 0;
+		}
+		.wrap img {
+			width: 350px;
+			margin: 0 25px 0 0;
+			border-top-right-radius: 15px;
+			border-top-left-radius: 15px;
+		}
+		.wrap p {
+			padding: 15px;
+			color: black;
+			text-align: center;
+			margin: 0 0 50px 0;
+		}
+
+		.wrap h2 {
+			color: seagreen;
+			padding: 15px 15px 0 15px;
+			text-align: center;
+		}
+		.wrap .layanan{
+			float: left;
+			width: 350px;
+			background: white;
+			border-radius: 15px;
+			box-shadow: 0 0 20px black;
+			margin: 0 0 25px 25px;
+		}
+		.wrap .layanan p {
+			color: gray;
+			text-align: justify;
+			margin: 0;
+		}
+		.wrap .layanan h2 {
+			color: seagreen;
+			padding: 15px 15px 0 15px;
+			text-align: justify;
+		}
+		.wrap .layanan button {
+			width: 155px;
+			height: 50px;
+			background: none;
+			border: 0;
+			cursor: pointer;
+			color: gray;
+			margin: 0 0 0 8px;
+		}
+		.wrap .layanan button:hover {
+			color: seagreen;
+			transition: 1s;
+		}
+
+
+
+		/* OLSHOP */
+		.shop .shop-title h2 {
+			text-align: center;
+			margin-top: 80px;
+			color: seagreen;
+		}
+		.shop .shop-title p {
+			text-align: center;
+			margin-top: 30px;
+		}
+		.shop .olshop {
+			margin: 50px 25px 50px 75px;
+			width: 300px;
+			border: 1px solid rgba(150, 150, 150, 0.5);
+			border-radius: 15px;
+			float: left;
+			transition: 0.7s;
+		}
+		.shop .olshop:hover:nth-child(2) {
+			box-shadow: 0 0 30px red;
+		}
+		.shop .olshop:hover:nth-child(3) {
+			box-shadow: 0 0 30px green;
+		}
+		.shop .olshop:hover:nth-child(4) {
+			box-shadow: 0 0 30px darkorange;
+		}
+		.shop .olshop img {
+			margin: 20px 0 0 100px;
+			width: 100px;
+		}
+		.shop .olshop p {
+			padding: 15px;
+			color: gray;
+			text-align: center;
+			margin: 30px;
+		}
+		.shop .olshop h2 {
+			padding: 15px 15px 0 15px;
+			text-align: center;
+		}
+
+
+
+		/* TAMPILAN DUA KOLOM */
+		.duakolom {
+			margin: 50px 25px 800px 100px;
+			padding: 20px;
+		}
+		.duakolom .kiri, .kanan {
+			width: 450px;
+			float: left;
+			margin: 20px;
+		}
+		.duakolom .kiri h2 {
+			text-align: left;
+			margin: 0 0 20px 0;
+		}
+		.duakolom .kiri p {
+			text-align: left;
+			margin: 0 0 20px 0;
+		}
+	    .duakolom .kiri a {
+	        position: relative;
+	        display: inline-block;
+	        padding: 15px 30px;
+	        color: seagreen;
+	        text-transform: uppercase;
+	        letter-spacing: 1px;
+	        text-decoration: none;
+	        font-size: 15px;
+	        overflow: hidden;
+	        transition: 0.5s;
+	        border-radius: 5px;
+	    }
+	    .duakolom .kiri a:hover {
+	        color: white;
+	        background: seagreen;
+	        transition-delay: 1.2s;
+	        box-shadow: 0 0 10px seagreen, 0 0 40px seagreen, 0 0 80px seagreen;
+	    }
+	    .duakolom .kiri a span {
+	        position: absolute;
+	        display: block;
+	    }
+	    .duakolom .kiri a span:nth-child(1) {
+	        top: 0;
+	        left: -100%;
+	        width: 100%;
+	        height: 2px;
+	        background: linear-gradient(90deg, transparent, seagreen);
+	    }
+	    .duakolom .kiri a:hover span:nth-child(1) {
+	        left: 100%;
+	        transition: 1s;
+	        transition-delay: 0.5s;
+	    }
+	    .duakolom .kiri a span:nth-child(3) {
+	        bottom: 0;
+	        right: -100%;
+	        width: 100%;
+	        height: 2px;
+	        background: linear-gradient(270deg, transparent, seagreen);
+	    }
+	    .duakolom .kiri a:hover span:nth-child(3) {
+	        right: 100%;
+	        transition: 1s;
+	        transition-delay: 1s;
+	    }
+	    .duakolom .kiri a span:nth-child(2) {
+	        top: -100%;
+	        right: 0;
+	        width: 2px;
+	        height: 100%;
+	        background: linear-gradient(180deg, transparent, seagreen);
+	    }
+	    .duakolom .kiri a:hover span:nth-child(2) {
+	        top: 100%;
+	        transition: 1s;
+	        transition-delay: 0.75s;
+	    }
+	    .duakolom .kiri a span:nth-child(4) {
+	        bottom: -100%;
+	        left: 0;
+	        width: 2px;
+	        height: 100%;
+	        background: linear-gradient(360deg, transparent, seagreen);
+	    }
+	    .duakolom .kiri a:hover span:nth-child(4) {
+	        bottom: 100%;
+	        transition: 1s;
+	        transition-delay: 0.25s;
+	    }
+	    .duakolom .kanan .atas, .tengah, .bawah {
+	    	border: 1px solid gray;
+	    }
+	    .duakolom .kanan .atas {
+	    	border-top-left-radius: 15px;
+	    	border-top-right-radius: 15px;
+	    }
+	    .duakolom .kanan .bawah {
+	    	border-bottom-left-radius: 15px;
+	    	border-bottom-right-radius: 15px;
+	    }
+	    .duakolom .kanan h4 {
+	    	float: left;
+	    	padding: 20px;
+	    	width: 90px;
+	    	font-size: 14px;
+	    }
+		.duakolom .kanan a img {
+			width: 30px;
+			margin: 20px 0 0 10px;
+			padding: 10px;
+			z-index: 1;
+		}
+		.duakolom .kanan a:before {
+			content: '';
+			width: 30px;
+			height: 30px;
+			margin: 30px 0 0 20px;
+			position: absolute;
+			transition: 0.5s;
+		}
+		.duakolom .kanan a:nth-child(1):before {
+			border-radius: 50%;
+		}
+		.duakolom .kanan a:nth-child(2):before {
+			border-radius: 25%;
+		}
+		.duakolom .kanan a:nth-child(3):before {
+			margin: 36px 0 0 21px;
+			width: 28px;
+			height: 18px;
+			border-radius: 25%;
+		}
+		.duakolom .kanan a:nth-child(4):before {
+			border-radius: 50%;
+		}
+		.duakolom .kanan a:nth-child(5):before {
+			border-radius: 25%;
+		}
+		.duakolom .kanan a:hover:nth-child(1):before {
+			margin: 31px 0 0 21px;
+			width: 28px;
+			height: 28px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px 7px #3477eb;
+		}
+		.duakolom .kanan a:hover:nth-child(2):before {
+			border-radius: 25%;
+			box-shadow: -4px 4px 15px rgba(255, 255, 0, 1.0), -5px -3px 15px rgba(0, 0, 255, 1.0), 5px 3px 15px rgba(255, 0, 0, 1.0) , 1px -3px 15px rgba(255, 0, 255, 1.0);
+		}
+		.duakolom .kanan a:hover:nth-child(3):before {
+			margin: 36px 0 0 21px;
+			width: 28px;
+			height: 18px;
+			border-radius: 25%;
+			box-shadow: 0 0 10px 7px red;
+		}
+		.duakolom .kanan a:hover:nth-child(4):before {
+			margin: 31px 0 0 21px;
+			width: 28px;
+			height: 28px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px 7px #1f9aff;
+		}
+		.duakolom .kanan a:hover:nth-child(5):before {
+			margin: 31px 0 0 21px;
+			width: 28px;
+			height: 28px;
+			border-radius: 25%;
+			box-shadow: -4px 4px 15px #0362fc, -5px -3px 15px #ff1f1f, 5px 3px 15px rgba(0, 255, 0, 1.0) , 1px -3px 15px rgba(255, 255, 0, 1.0);
+			/*background: linear-gradient(50deg, #0362fc, #ff1f1f, green, yellow);
+			filter: blur(5px);*/
+		}
+	    .duakolom .kanan input[type=radio] {
+	    	margin: 25px;
+	    	margin-left: 270px;
+	    	cursor: pointer;
+	    	height: 20px;
+	    	width: 20px;
+	    }
+	    .duakolom .kanan p {
+	    	display: none;
+	    	padding: 20px;
+	    	background-color: #eee;
+	    	font-size: 14px;
+	    }
+	    .duakolom .kanan input:checked + p {
+	    	display: block;
+	    }
+
+
+
+		/* TAMPILAN FULLSCREEN VIDEO */
+	    .video {
+	    	height: 720px;
+	    }
+	    .video iframe {
+	    	 width: 100%;
+	    	 height: 100%;
+	    }
+
+	    .map iframe {
+	    	width: 100%;
+	    }
+
+
+
+		/* MEMBERSHIP */
+		.layer {
+			overflow: hidden;
+			text-align: center;
+			margin-top: 50px;
+			padding: 50px;
+			background: white;
+		}
+		.layer p {
+			color: seagreen;
+			padding: 20px;
+			font-size: 20px;
+		}
+		.layer .membership{
+			float: left;
+			width: 350px;
+			background: white;
+			border-radius: 15px;
+			box-shadow: 0 0 30px gray;
+			margin: 30px 0 25px 25px;
+		}
+		.layer .membership h2 {
+			padding: 15px 15px 0 15px;
+			text-align: center;
+			background: seagreen;
+			color: white;
+		}
+		.layer .membership h2:nth-child(1) {
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+		}
+		.layer .membership h2:nth-child(3) {
+			padding: 20px;
+		}
+		.layer .membership .isi {
+			cursor: pointer;
+		}
+		.layer .membership .isi a {
+			padding: 15px;
+			color: black;
+			text-decoration: none;
+			display: block;
+			transition: 0.7s;
+		}
+		.layer .membership .isi a:hover {
+			color: seagreen;
+		}
+	    .layer .membership .button a {
+	        position: relative;
+	        display: inline-block;
+	        padding: 15px 30px;
+	        color: seagreen;
+	        text-transform: uppercase;
+	        letter-spacing: 1px;
+	        text-decoration: none;
+	        font-size: 15px;
+	        overflow: hidden;
+	        transition: 0.5s;
+	        border-radius: 5px;
+	        margin: 20px 0;
+	    }
+	    .layer .membership .button a:hover {
+	        color: white;
+	        background: seagreen;
+	        transition-delay: 1.2s;
+	        box-shadow: 0 0 10px seagreen, 0 0 40px seagreen, 0 0 80px seagreen;
+	    }
+	    .layer .membership .button a span {
+	        position: absolute;
+	        display: block;
+	    }
+	    .layer .membership .button a span:nth-child(1) {
+	        top: 0;
+	        left: -100%;
+	        width: 100%;
+	        height: 2px;
+	        background: linear-gradient(90deg, transparent, seagreen);
+	    }
+	    .layer .membership .button a:hover span:nth-child(1) {
+	        left: 100%;
+	        transition: 1s;
+	        transition-delay: 0.5s;
+	    }
+	    .layer .membership .button a span:nth-child(3) {
+	        bottom: 0;
+	        right: -100%;
+	        width: 100%;
+	        height: 2px;
+	        background: linear-gradient(270deg, transparent, seagreen);
+	    }
+	    .layer .membership .button a:hover span:nth-child(3) {
+	        right: 100%;
+	        transition: 1s;
+	        transition-delay: 1s;
+	    }
+	    .layer .membership .button a span:nth-child(2) {
+	        top: -100%;
+	        right: 0;
+	        width: 2px;
+	        height: 100%;
+	        background: linear-gradient(180deg, transparent, seagreen);
+	    }
+	    .layer .membership .button a:hover span:nth-child(2) {
+	        top: 100%;
+	        transition: 1s;
+	        transition-delay: 0.75s;
+	    }
+	    .layer .membership .button a span:nth-child(4) {
+	        bottom: -100%;
+	        left: 0;
+	        width: 2px;
+	        height: 100%;
+	        background: linear-gradient(360deg, transparent, seagreen);
+	    }
+	    .layer .membership .button a:hover span:nth-child(4) {
+	        bottom: 100%;
+	        transition: 1s;
+	        transition-delay: 0.25s;
+	    }
+
+
+
+		/* SOAL TAMBAHAN UTS */
+		.application h3:after {
+			content: '';
+			display: block;
+			width: 500px;
+			height: 3px;
+			background: seagreen;
+			margin-left: 30%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			border-radius: 30px;
+		}
+		.application p {
+			text-align: center;
+			color: gray;
+			margin-bottom: 50px;
+		}
+		.application .data {
+			margin-left: 18%;
+			padding: 20px;
+		}
+		.application .data input {
+			width: 150px;
+			height: 40px;
+			margin-right: 30px;
+			padding-left: 10px;
+		}
+		.application .data select {
+			width: 150px;
+			height: 45px;
+			margin-right: 30px;
+			border: 1px solid gray;
+			padding-left: 10px;
+			color: gray;
+		}
+		.application .data select option {
+			color: black;
+		}
+		.application .submit {
+			margin-left: 45%;
+			background-color: seagreen;
+			border: 0;
+			color: white;
+			padding: 10px 30px;
+			font-size: 10px;
+			cursor: pointer;
+			transition: 1s;
+			border: 3px solid seagreen;
+		}
+		.application .submit:hover {
+			background: none;
+			color: seagreen;
+			border: 3px solid seagreen;
+		}
+		.application .tombol {
+			width: 100%;
+			background-color: #f2f2f2;
+			padding-left: 21%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-top: 100px;
+		}
+		.application .tombol button:nth-child(1) {
+			width: 100px;
+			height: 50px;
+			border-radius: 10px;
+			border: 0;
+			background: linear-gradient(0deg, #115c27, seagreen);
+			color: white;
+			cursor: pointer;
+			margin-right: 50px;
+		}
+		.application .tombol button:nth-child(2) {
+			width: 100px;
+			height: 50px;
+			border-radius: 10px;
+			border: 0;
+			background: linear-gradient(0deg, #1c407a, #3470d1);
+			color: white;
+			cursor: pointer;
+			margin-right: 50px;
+		}
+		.application .tombol button:nth-child(3) {
+			width: 180px;
+			height: 50px;
+			border-radius: 10px;
+			border: 0;
+			background: gray;
+			color: white;
+			cursor: pointer;
+			margin-right: 50px;
+		}
+		.application .tombol button:nth-child(4) {
+			width: 180px;
+			height: 50px;
+			border-radius: 10px;
+			border: 0;
+			background: gray;
+			color: white;
+			cursor: pointer;
+			margin-right: 50px;
+		}
+
+
+
+		/* ORDER */
+		.order {
+			overflow: hidden;
+			text-align: center;
+			margin-top: 50px;
+			padding: 50px;
+			background: white;
+		}
+		.order p {
+			color: seagreen;
+			padding: 20px;
+			font-size: 20px;
+		}
+		.order a {
+			position: relative;
+			width: 160px;
+			height: 60px;
+			display: inline-block;
+			background: #fff;
+			margin: 20px;
+		}
+		.order a:before, .order a:after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			transition: 0.25s;
+			background: linear-gradient(45deg, #03fc88, white, white, #d400d4);
+			border-radius: 10px;
+		}
+		.order a:hover:before {
+			inset: -5px;
+			border-radius: 10px;
+		}
+		.order a:hover:after {
+			inset: -10px;
+			filter: blur(15px);
+			border-radius: 10px;
+		}
+		.order a span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			background: white;
+			z-index: 10;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 20px;
+			color: black;
+			border: 1px solid lightgray;
+			border-radius: 10px;
+		}
+
+
+
+		/* FOOTER */
+		.tigakolom {
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
+			width: 100%;
+			background: lightgray;
+		}
+		.tigakolom .Fkiri {
+			float: left;
+			width: 250px;
+			margin: 60px 0 0 55px;
+		}
+		.tigakolom .Ftengah, .Fkanan {
+			float: left;
+			width: 400px;
+			margin: 60px 0 0 55px;
+		}
+		.tigakolom h3 {
+			text-align: left;
+			margin: 0 0 30px 0;
+		}
+		.tigakolom .Fkiri img {
+			width: 200px;
+			border-radius: 15px;
+			float: left;
+			transition: 1s;
+		}
+		.tigakolom .Fkiri img:hover {
+			filter: brightness(0.5);
+		}
+		.tigakolom .Fkiri .blur{
+			color: white;
+			backdrop-filter: blur(10px);
+			margin-top: 200px;
+			height: 100px;
+			position: absolute;
+			width: 200px;
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
+		}
+		.tigakolom .Fkiri .blur p:nth-child(1) {
+			margin: 10px 0 0 60px;
+		}
+		.tigakolom .Fkiri .blur p:nth-child(2) {
+			margin: 0 0 0 15px;
+		}
+		.tigakolom .Fkiri .blur p:nth-child(3) {
+			margin: 0 0 0 25px;
+		}
+		.tigakolom .Ftengah a {
+			display: inline-block;
+			padding: 10px;
+			text-decoration: none;
+			color: gray;
+			transition: 0.7s;
+			width: 150px;
+		}
+		.tigakolom .Ftengah a i {
+			margin: 0 20px 0 0;
+		}/*
+		.tigakolom .Ftengah a:nth-child(n + 1):nth-child(-n + 8) {
+			float: left;
+		}
+		.tigakolom .Ftengah a:nth-child(n + 9):nth-child(-n + 11) {
+			float: right;
+		}*/
+		.tigakolom .Ftengah a:hover {
+			color: seagreen;
+		}
+		.tigakolom .Fkanan p {
+			color: gray;
+			margin: 0 10px 30px 10px;
+		}
+		.tigakolom .Fkanan .isian {
+			display: flex;
+		}
+		.tigakolom .Fkanan .isian p {
+			width: 100px;
+			margin: 0 10px 10px 10px;
+		}
+		.tigakolom .Fkanan .isian a {
+			text-decoration: none;
+			color: seagreen;
+		}
+
+		footer {
+			float: left;
+			background: #eee;
+			color: gray;
+			text-align: center;
+			font-size: 15px;
+			line-height: 40px;
+			height: 40px;
+			margin-top: 30px;
+			width: 100%;
+			padding: 20px 0;
+		}
+		footer a {
+			color: seagreen;
+		}

@@ -1,0 +1,377 @@
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		/*
+		@media screen and (max-width : 400px) {
+			body {
+				background: blue;
+			}
+		}
+		*/
+		.container {
+			width: 1000px;
+			margin: auto;
+		}
+		header {
+			height: 125px;
+			background-color: #4d4d4d;
+			overflow: hidden;
+			color: #f2f2f2;
+		}
+		header .kiri img {
+			width: 80px;
+			height: 100px;
+			margin: 15px 0 0 35px;
+			float: left;
+			clip-path: circle(40%);
+		}
+		header .kanan {
+			font-size: 20px;
+			float: left;
+			margin: 15px 0 0 90px;
+		}
+	    nav {
+	      	background: #4d4d4d;
+	      	height: 40px;
+	      	line-height: 40px;
+			position: sticky;
+			top: -1px;
+			z-index: 1;
+	    }
+	    .active {
+	    	background: red;
+	    }
+	    nav ul li {
+	      	float: left;
+	      	list-style: none;
+	      	background: #4d4d4d;
+	      	border-right: 1px solid red;
+	      	cursor: pointer;
+	    }
+	    nav ul li a {
+	      	margin-right: 15px;
+	      	text-decoration: none;
+	      	padding: 0 66px;
+	      	color: #f2f2f2;
+	    }
+	    nav ul li ul {
+	      	display: none;
+	    }
+	    nav ul li:hover > ul {
+	      	display: block;
+	    }
+	    nav ul li ul {
+	      	position: absolute;
+	    }
+	    nav ul li ul li {
+	      	float: none;
+	      	position: relative;
+	    }
+	    nav ul li:hover {
+	      	background: red;
+	    }
+	    nav ul li a:hover {
+	      	color: white;
+	    }
+	    nav ul ul ul {
+	    	left: 100%;
+	    	top: 0;
+	      	width: 190px;
+	      	display: none;
+	    }
+		article {
+			overflow: hidden;
+			margin-top: 15px;
+		}
+		article h1 {
+			color: green;
+			margin: 0 0 10px 0;
+			font-size: 25px;
+			font-family: gambria;
+		}
+		article p {
+			text-align: justify;
+			margin: 0 0 15px 0;
+		}
+		article .kiri {
+			float: left;
+			width: 300px;
+		}
+		
+		article .kiri .duakolom .duakolomkiri {
+			width: 140px;
+			float: left;
+			border-left: 4px solid red;
+			height: 170px;
+		}
+		article .kiri .duakolom .duakolomkiri a {
+			text-decoration: none;
+		}
+		article .kiri .duakolom .duakolomkiri img {
+			width: 50px;
+			margin-left: 5px;
+		}
+		article .kiri .duakolom .duakolomkanan {
+			width: 120px;
+			float: left;
+			border-left: 4px solid red;
+			height: 170px;
+		}
+		article .kiri .duakolom h1 {
+			margin-left: 12px;
+		}
+		article .kiri .duakolom p {
+			margin: 20px 0 0 12px;
+			line-height: 5px;
+			font-size: 14px;
+		}
+		
+		article .kiri .kiritengah {
+			background: #4d4d4d;
+			padding: 15px;
+			margin: 30px 0 0 0;
+			height: 100px;
+			position: fixed;
+			left: 0;
+			bottom: 40px;
+			border-radius: 15px 30px 30px 0;
+		}
+		article .kiri .kiritengah h1 {
+			color: #f2f2f2;
+		}
+		article .kiri .kiritengah img {
+			width: 45px;
+			padding: 0 20px 0 0 ;
+		}
+		article .kiri .kiritengah img:hover {
+			width: 55px;
+		}
+		article .kiri .kiribawah {
+			margin: 30px 0 0 0;
+		}
+		article .kiri .kiribawah iframe {
+			margin: 15px 0 0 0;
+		}
+		article .kanan {
+			float: right;
+			width: 650px;
+		}
+		article .kanan .atas img {
+			width: 650px;
+			-webkit-mask-image:  radial-gradient(circle at 41% 36%, black 6%, rgba(0, 0, 0, 0.3) 15%);
+		}
+		article .kanan .atas p {
+			margin: 20px 0 0 0;
+		}
+		article .kanan .bawah {
+			overflow: hidden;
+			margin: 45px 0 0 0;
+		}
+		article .kanan .bawah .kiribawah {
+			width: 300px;
+			float: left;
+			border-left: 4px solid red;
+		}
+		article .kanan .bawah .kananbawah {
+			width: 300px;
+			float: right;
+			border-left: 4px solid red;
+		}
+		article .kanan .bawah .kananbawah img {
+			width: 45px;
+			margin-left: 12px;
+		}
+		article .kanan .bawah h1 {
+			margin-left: 12px;
+		}
+		article .kanan .bawah p {
+			margin-left: 12px;
+		}
+		form {
+			background: #eee;
+			padding: 25px;
+			width: 590px;
+			margin: auto;
+			border: 1px solid black;
+			border-radius: 10px;
+		}
+
+		.itemForm {
+			background: white;
+			padding: 15px;
+			border: 1px solid black;
+			overflow: hidden;
+		}
+
+		.itemForm .form1 {
+			float: left;
+			margin: 0 30px 0 0;
+		}
+
+		.itemForm .form1 label{
+			display: block;
+			line-height: 30px;
+		}
+
+		.itemForm .form2 input {
+			line-height: 23px;
+			margin: 2px;
+			width: 350px;
+		}
+
+		.itemForm .form2 input.inputText {
+			padding: 0 0 0 10px;
+		}
+
+		.itemForm .form2 input:hover {
+			background: #43cc5c;
+			border-radius: 5px;
+			font-size: 15px;
+			border: 1px solid black;
+		}
+		.tool {
+			position: relative;
+		}
+
+		.tool .tips {
+			display: inline;
+		}
+
+		.tool .tips span {
+			display: none;
+		}
+
+		.tips:hover span {
+			display: inline-block;
+			background: #447ad4;
+			color: white;
+			padding: 10px;
+			font-size: 12px;
+			border-radius: 10px;
+			margin: 0 0 0 5px;
+		}
+
+		input[type=password] {
+			padding: 8px;
+			margin: 0 0 0 10px;
+
+		}
+
+		input[type=submit], button[type=button] {
+			padding: 8px;
+			border-radius: 5px;
+			border: 1px solid black;
+		}
+
+		input[type=submit]:hover, button[type=button]:hover {
+			background: green;
+			color: white;
+			border: 0;
+			padding: 10px;
+			border-radius: 5px;
+		}
+
+		.tool button:hover {
+			transition: background 2s ease-in-out;
+		}
+		caption {
+			background: red;
+			color: white;
+			font-size: 25px;
+			padding: 10px;
+			margin: -25px 0 0 0;
+		}
+
+		th, td {
+			padding: 5px 25px;
+		}
+
+		thead {
+			background: seagreen;
+			color: white;
+		}
+
+		tbody {
+			background: #8e8e8e;
+		}
+
+		tfoot {
+			background: seagreen;
+			color: white;
+		}
+
+		tbody tr td:nth-child(2) {
+			text-align: center;
+		}
+
+		tbody tr td:nth-child(3),
+		tbody tr td:nth-child(4) {
+			text-align: right;
+		}
+
+		tr:nth-child(even) {
+			background: #eee;
+		}
+		.profile {
+			border: 1px solid red;
+			padding: 30px;
+		}
+		.biodata {
+			line-height: 20px;
+			float: left;
+			margin: 0 70px 0 0;
+		}
+		.biodata p {
+			margin: 0 0 0 5px;
+		}
+		.biodata img {
+			width: 200px;
+			margin: 10px 0 0 0;
+		}
+		table {
+			font-family: "arial";
+			margin: 20px 0 0 0 ;
+		}
+		footer {
+			background: #3a3a3a;
+			color: #f2f2f2;
+			text-align: center;
+			font-size: 15px;
+			line-height: 40px;
+			height: 40px;
+			margin-top: 30px;
+			position: sticky;
+			bottom: 0;
+		}
+		footer a {
+			color: #f2f2f2;
+		}
+		.tigakolom {
+			overflow: hidden;
+			text-align: justify;
+			margin-top: 50px;
+		}
+		.tigakolom img {
+			width: 80px;
+			float: left;
+			margin: 0 25px 0 0;
+		}
+		.tigakolom p {
+			margin-top: 10px;
+		}
+		.tigakolom .kiri {
+			float: left;
+			width: 300px;
+			margin: 0 50px 25px 0;
+		}
+		.tigakolom .tengah {
+			float: left;
+			width: 300px;
+			margin: 0 50px 25px 0;
+		}
+		.tigakolom .kanan {
+			float: left;
+			width: 300px;
+			margin: 0 0 25px 0;
+		}

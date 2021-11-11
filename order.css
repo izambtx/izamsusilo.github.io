@@ -1,0 +1,210 @@
+		* {
+			padding: 0;
+			font-family: "Open Sans", sans-serif;
+			margin: 0;
+		}
+		body {
+			background: #5e5e5e;
+			padding: 15px;
+			font-size: 18px;
+		}
+		form {
+			background: #eee;
+			width: 800px;
+			margin: auto;
+			border: 1px solid black;
+			border-radius: 10px;
+			height: 470px;
+		}
+
+
+
+		/* bagian kiri */
+		form .kiri{
+			width: 450px;
+			float: left;
+			padding: 20px;
+		}
+		form .kiri p {
+			color: seagreen;
+			padding: 20px;
+			font-size: 20px;
+			padding-left: 5px;
+			padding-top: 5px;
+		}
+	    form .kiri p:before {
+	    	content: '';
+			background: seagreen;
+	    	display: block;
+			width: 100px;
+			height: 5px;
+			border-radius: 5px;
+	    }
+		form .kiri h2 {
+			font-size: 20px;
+			padding-left: 5px;
+		}
+		form .kiri .itemForm {
+			background: white;
+			padding: 15px;
+			border: 1px solid black;
+			overflow: hidden;
+			border-radius: 10px;
+			margin: 0 0 -20px 5px;
+		}
+		form .kiri .itemForm .form2 input {
+			line-height: 23px;
+			margin: 2px;
+			width: 170px;
+			background: whitesmoke;
+			height: 40px;
+			border: 1px solid gray;
+			border-radius: 10px;
+		}
+		form .kiri .itemForm .form2 input:nth-child(2) {
+			float: left;
+		}
+		form .kiri .itemForm .form2 input:nth-child(3) {
+			margin-top: -45px;
+			float: right;
+		}
+		form .kiri .itemForm .form2 input.inputText {
+			padding: 0 0 0 10px;
+		}
+		form .kiri textarea {
+			display: block;
+			border-radius: 10px;
+			padding: 10px;
+			width: 390px;
+			background: whitesmoke;
+			margin-top: -30px;
+		}
+	    form .kiri .button a {
+	        position: relative;
+	        display: inline-block;
+	        padding: 15px 50px;
+	        color: seagreen;
+	        text-transform: uppercase;
+	        letter-spacing: 1px;
+	        text-decoration: none;
+	        font-size: 15px;
+	        overflow: hidden;
+	        transition: 0.5s;
+	        border-radius: 5px;
+	        margin-left: 3px;
+	    }
+	    form .kiri .button a:hover {
+	        color: white;
+	        background: seagreen;
+	        transition-delay: 1.2s;
+	        box-shadow: 0 0 10px seagreen, 0 0 40px seagreen, 0 0 80px seagreen;
+	    }
+	    form .kiri .button a span {
+	        position: absolute;
+	        display: block;
+	    }
+	    form .kiri .button a span:nth-child(1) {
+	        top: 0;
+	        left: -100%;
+	        width: 100%;
+	        height: 2px;
+	        background: linear-gradient(90deg, transparent, seagreen);
+	    }
+	    form .kiri .button a:hover span:nth-child(1) {
+	        left: 100%;
+	        transition: 1s;
+	        transition-delay: 0.5s;
+	    }
+	    form .kiri .button a span:nth-child(3) {
+	        bottom: 0;
+	        right: -100%;
+	        width: 100%;
+	        height: 2px;
+	        background: linear-gradient(270deg, transparent, seagreen);
+	    }
+	    form .kiri .button a:hover span:nth-child(3) {
+	        right: 100%;
+	        transition: 1s;
+	        transition-delay: 1s;
+	    }
+	    form .kiri .button a span:nth-child(2) {
+	        top: -100%;
+	        right: 0;
+	        width: 2px;
+	        height: 100%;
+	        background: linear-gradient(180deg, transparent, seagreen);
+	    }
+	    form .kiri .button a:hover span:nth-child(2) {
+	        top: 100%;
+	        transition: 1s;
+	        transition-delay: 0.75s;
+	    }
+	    form .kiri .button a span:nth-child(4) {
+	        bottom: -100%;
+	        left: 0;
+	        width: 2px;
+	        height: 100%;
+	        background: linear-gradient(360deg, transparent, seagreen);
+	    }
+	    form .kiri .button a:hover span:nth-child(4) {
+	        bottom: 100%;
+	        transition: 1s;
+	        transition-delay: 0.25s;
+	    }
+
+
+
+		/* bagian kanan */
+		form .kanan {
+			background: seagreen;
+			width: 300px;
+			height: 100%;
+			float: right;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			padding: 1px;
+			margin-right: -1px;
+			margin-top: -1px;
+		}
+		form .kanan h3 {
+			padding: 20px;
+			color: white;
+		}
+		form .kanan h3:nth-child(2) {
+			padding: 0;
+			padding-left: 20px;
+		}
+		form .kanan p {
+			color: white;
+			padding: 20px;
+			font-size: 15px;
+			line-height: 25px;
+		}
+		form .kanan p:nth-child(4) {
+			padding: 0;
+			padding-left: 20px;
+			padding-top: 5px;
+		}
+		form .kanan p:nth-child(4) a {
+			font-size: 14px;
+		}
+		form .kanan p:nth-child(5) {
+			padding: 0;
+			padding-left: 20px;
+			padding-top: 5px;
+		}
+		form .kanan p:nth-child(5) a {
+			font-size: 14px;
+		}
+		form .kanan p:nth-child(6) {
+			padding: 0;
+			padding-left: 20px;
+			padding-top: 5px;
+		}
+		form .kanan p:nth-child(6) a {
+			font-size: 14px;
+		}
+		form .kanan p a {
+			color: white;
+			text-align: center;
+		}
